@@ -300,7 +300,7 @@ Si
                     console.log(object[key]);
                  	}
                  }
-                readObject(myCar);
+                readObject(park);
 
 
 ¡Felicidades por completar la prueba de JavaScript! Confío en que hayas completado cada paso y hayas pausado para repasar los temas de los ejercicios que se te complicaron.
