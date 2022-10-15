@@ -93,6 +93,7 @@ Los parámetros son variables a las que se les asignará un valor.
 
 Los Argumentos son los valores asignados a los parámetros al ejecutarse.
 ### <<Las funciones reciben argumentos al ejecutarse>>
+![imagen](https://user-images.githubusercontent.com/83564327/196000641-4b8b78ec-a8c8-460a-9121-e0956802d89d.png)
 
 
 2️⃣ Convierte el siguiente código en una función, pero, cambiando cuando sea necesario las variables constantes por parámetros y argumentos en una función:
