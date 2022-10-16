@@ -256,12 +256,19 @@ Si, por supuesto.
 
 ¿Qué es un array?
 
-son objetos similares a una lista cuyo prototipo proporciona métodos para efectuar operaciones de recorrido y de mutación.
+Es una lista de elementos, que pueden estar ordenadas o desordenadas. Ejemplo de array: 
+         
+         const array = [1,'samuel', true, false, 'Arandia']
 
 ¿Qué es un objeto?
 
 Un objeto es una colección de propiedades, y una propiedad es una asociación entre un nombre (o clave) y un valor. El valor de una propiedad puede ser una función, en cuyo caso la propiedad es conocida como un método. Además de los objetos que están predefinidos en el navegador, puedes definir tus propios objetos. Este capítulo describe cómo usar objetos, propiedades, funciones y métodos; y cómo crear tus propios objectos.
 
+Es una lista de elementos pero cada elemento tiene un nombre clave. 
+
+         const obj = {
+            nombre:'samuel',
+            apellido: 'Arandia',} 
 
 ¿Cuándo es mejor usar objetos o arrays?
 
@@ -272,6 +279,7 @@ Los arrays se utilizan cuando almacenamos múltiples valores de una sola variabl
 ¿Puedo mezclar arrays con objetos o incluso objetos con arrays?
 
 Si
+![imagen](https://user-images.githubusercontent.com/83564327/196036138-4793f875-b3e1-412e-8dc4-0b6fe231a914.png)
 
 2️⃣ Crea una función que pueda recibir cualquier array como parámetro e imprima su primer elemento.
 
@@ -280,7 +288,7 @@ Si
                   console.log(array[0]);      
              
              }
-        
+             readArray(arrayNew);
 3️⃣ Crea una función que pueda recibir cualquier array como parámetro e imprima todos sus elementos uno por uno (no se vale imprimir el array completo).
 
             let arrayNew = ['puerto aysen', 'puerto cisne', 'puerto tranquilo', 'puerto chacabuco'];
@@ -291,18 +299,20 @@ Si
 4️⃣ Crea una función que pueda recibir cualquier objeto como parámetro e imprima todos sus elementos uno por uno (no se vale imprimir el objeto completo).
 ¿Cómo te fue? 🏆
 
-                let park = {
-                  name: 'patagonia',
-                  location: 'Ruta 7',
-                  country: chile 
-                };
-                function readObject(object) {
-                  for (let key in object) {
-                    console.log(object[key]);
-                 	}
-                 }
-                readObject(park);
-
+                     park = {
+                         name: 'patagonia',
+                         location: 'Ruta 7',
+                         country: 'chile',
+                       };
+                     
+                     function readObject(object) {
+                         const array = Object.values(object);
+                         for (let i = 0; i < array.length; i++) {
+                             console.log(array[i]);
+                         }
+                     }
+                     readObject(park);
+                     
 
 ¡Felicidades por completar la prueba de JavaScript! Confío en que hayas completado cada paso y hayas pausado para repasar los temas de los ejercicios que se te complicaron.
 
